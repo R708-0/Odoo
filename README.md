@@ -1,0 +1,2 @@
+# Odoo
+aplicaciones de odoo
