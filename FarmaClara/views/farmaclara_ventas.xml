@@ -1,18 +1,21 @@
 <odoo>
-        <record id="farmaclara_ventas_view" model="ir.ui.view">
-            <field name="name">farmaclara.ventas.view</field>
-            <field name="model">pos.config</field>
-            <field name="inherit_id" ref="point_of_sale.view_pos_config_kanban"/>
-            <field name="arch" type="xml">
-                <!-- cambios -->
-            </field>
-        </record>
+    <record id="farmaclara_ventas_view" model="ir.ui.view">
+        <field name="name">farmaclara.ventas.view</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_config_kanban"/>
+        <field name="arch" type="xml">
+            <!-- CREAR DIV CON INFO MODIFICADA -->
+            <xpath expr="//div[@class='container o_kanban_card_content']" position="inside">
+                <div>Vista modificada para Farma Clara</div>
+            </xpath>
+        </field>
+    </record>
 
-        <record id="farmaclara_ventas_action_view" model="ir.actions.act_window">
-            <field name="name">Farma Clara</field>
-            <field name="res_model">pos.config</field>
-            <field name="view_mode">kanban,tree,form</field>
-        </record>
+    <record id="farmaclara_ventas_action_view" model="ir.actions.act_window">
+        <field name="name">Farma Clara</field>
+        <field name="res_model">pos.config</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
 
-        <menuitem id="menu_farmaclara_ventas"  action="farmaclara_ventas_action_view" sequence="1"/>
+    <menuitem id="menu_farmaclara_ventas"  action="farmaclara_ventas_action_view" sequence="1"/>
 </odoo>
