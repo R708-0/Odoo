@@ -12,7 +12,7 @@
     </record>
 
     <record id="farmaclara_ventas_action_view" model="ir.actions.act_window">
-        <field name="name">Farma Clara</field>
+        <field name="name">FarmaClara</field>
         <field name="res_model">pos.config</field>
         <field name="view_mode">kanban,tree,form</field>
     </record>
