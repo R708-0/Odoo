@@ -1,0 +1,17 @@
+<odoo>
+    <!-- heredar vista -->
+    <record id="farmaclara_inventario_view" model="ir.ui.view">
+        <field name="name">farmaclara.inventario.view</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref ="product.product_template_kanban_view"/>
+        <field name="arch" typr="xml">
+            <xpath expr="//div[@class='oe_kanban_card oe_kanban_global_click']">
+            </xpath>
+        </field>
+    </record>
+    <!-- crear evento de las vistas -->
+    <record>
+    </record>
+    <!-- crear menu  -->
+    <menuitem/>
+</odoo>

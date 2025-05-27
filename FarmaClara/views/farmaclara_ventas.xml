@@ -6,7 +6,7 @@
         <field name="arch" type="xml">
             <!-- CREAR DIV CON INFO MODIFICADA -->
             <xpath expr="//div[@class='container o_kanban_card_content']" position="inside">
-                <div>Vista modificada para Farma Clara</div>
+                <div>Inicie el turno para comenzar a vender</div>
             </xpath>
         </field>
     </record>
