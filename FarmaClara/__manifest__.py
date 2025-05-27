@@ -6,6 +6,7 @@
     "depends":['point_of_sale'],
     "data":[
         'views/farmaclara_ventas.xml',
+        'views/farmaclara_inventario.xml',
     ],
     "installable": True,
     "application": True,

@@ -3,15 +3,19 @@
     <record id="farmaclara_inventario_view" model="ir.ui.view">
         <field name="name">farmaclara.inventario.view</field>
         <field name="model">product.template</field>
-        <field name="inherit_id" ref ="product.product_template_kanban_view"/>
-        <field name="arch" typr="xml">
-            <xpath expr="//div[@class='oe_kanban_card oe_kanban_global_click']">
+        <field name="inherit_id" ref="product.product_template_kanban_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@class='oe_kanban_card oe_kanban_global_click']" position="inside">
+                <div>Info inventario</div>
             </xpath>
         </field>
     </record>
     <!-- crear evento de las vistas -->
-    <record>
+    <record id="farmaclara_inventario_action_view" model="ir.actions.act_window">
+        <field name="name">Inventario</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">kanban,form,tree</field>
     </record>
     <!-- crear menu  -->
-    <menuitem/>
+    <menuitem id="menu_farmaclara_inventario" action="farmaclara_inventario_action_view" parent="FarmaClara.menu_farmaclara_ventas"/>
 </odoo>
