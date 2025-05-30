@@ -8,7 +8,7 @@
         'views/farmaclara_ventas.xml',
         'views/farmaclara_inventario.xml',
     ],
-    "assets":{
+    "assets": {
         'web.assets_backend': [
             'FarmaClara/static/src/css/farmaclara_style.css',
         ],
