@@ -8,11 +8,11 @@
         'views/farmaclara_ventas.xml',
         'views/farmaclara_inventario.xml',
     ],
-    "assets":{
-        'web.assets.backend':[
-            'FarmaClara/static/src/css/farmaclara_style.css',
-        ],
-    },
+    # "assets":{
+    #     'web.assets.backend':[
+    #         'FarmaClara/static/src/css/farmaclara_style.css',
+    #     ],
+    # },
     "installable": True,
     "application": True,
 }
