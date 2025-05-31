@@ -1,3 +1,20 @@
-.btn-primary{
-    background-color: #07a1ec !important;
+/* cambiar color de los botones */
+.btn-primary {
+    background-color: #0064ff !important;
+    border-color: #0064ff !important;
+}
+.btn-primary:hover {
+    background-color: #ff0064 !important;
+    border-color: #ff0064 !important;
+}
+
+/* cambiar color de la barra de navegacion */
+.o_main_navbar {
+    background-color: #0064ff !important;
+    border-color: #0064ff !important;
+}
+
+.o_main_navbar .o_menu_brand, .o_main_navbar .o_nav_entry, .o_main_navbar .dropdown-toggle{
+    background-color: #0064ff !important;
+    
 }
