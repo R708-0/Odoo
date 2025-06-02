@@ -7,6 +7,15 @@
     background-color: #db3498 !important;
     border-color: #db3498 !important;
 }
+.btn-outline-primary{
+    color: #3498db !important;
+    border-color: #3498db !important;
+}
+.btn-outline-primary:hover{
+    color: white !important;
+    border-color: #3498db !important;
+    background-color: #3498db !important;
+}
 
 /* cambiar color de la barra de navegacion */
 .o_main_navbar {
