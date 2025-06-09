@@ -21,9 +21,30 @@
             <xpath expr="//page[@name='purchase']" position='replace'/>
             <xpath expr="//page[@name='inventory']" position='replace'/>
             <xpath expr="//page[@name='invoicing']" position='replace'/>
+            
+            <!-- informacion necesaria -->
+            
 
-            <group>
-            </group>    
+            <!-- esconder campos sobrantes      -->
+            <xpath expr="//field[@name='sale_ok']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='purchase_ok']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='detailed_type']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='taxes_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='barcode']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='product_tag_ids']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            
         </field>
     </record>
   
