@@ -50,25 +50,15 @@
                 <group>
                     <field name="list_price"/>
                     <field name="default_code"/>
+                    <field name="available_in_pos"/>
+                    <field name="pos_categ_ids"/>
                 </group>
            </xpath>
 
            <!-- borrar campos sobrantes -->
-           <xpath expr="//field[@name='standard_price']" position="attributes">
-                <attribute name='invisible'>1</attribute>
-           </xpath>
-           <xpath expr="//field[@name='categ_id']" position="attributes">
-                <attribute name='invisible'>1</attribute>
-           </xpath>
-           <xpath expr="//field[@name='list_price']" position="attributes">
-                <attribute name='invisible'>1</attribute>
-           </xpath>
-           <xpath expr="//field[@name='default_code']" position="attributes">
-                <attribute name='invisible'>1</attribute>
-           </xpath>
-            <!-- <xpath expr="//button[@name=product_tag_action']" position="attributes">
+            <xpath expr="//group[@name='group_standard_price']" position="attributes">
                 <attribute name="invisible">1</attribute>
-            </xpath> -->
+            </xpath>
         </field>
     </record>
   
