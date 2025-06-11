@@ -27,3 +27,7 @@
     background-color: #3498db !important;
     
 }
+
+.o_form_view .o_form_label {
+    font-size: 1rem !important;
+}

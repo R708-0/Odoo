@@ -71,9 +71,9 @@
         <field name="model">product.template</field>
         <field name="inherit_id" ref="point_of_sale.product_template_form_view"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='available_in_pos']" position="attributes">
-                <attribute name="default">1</attribute>
-            </xpath>
+            <field name="available_in_pos" position="attributes">
+                <attribute name="default">True</attribute>
+            </field>
         </field>
     </record>
   
