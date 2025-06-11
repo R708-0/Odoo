@@ -11,6 +11,7 @@
     "assets":{
         'web.assets_backend':[
             'FarmaClara/static/src/css/farmaclara_style.css',
+            'FarmaClara/static/src/css/farmaclara_inv_form_style.css',
         ],
     },
 

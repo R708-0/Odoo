@@ -1,0 +1,62 @@
+/* Estilos para el formulario de producto */
+
+/* Cambiar el color del nombre del producto */
+.o_form_view .oe_title h1 {
+    color: #3a7bd5;
+    font-weight: bold;
+}
+
+/* Estilo para las pestañas */
+.nav-tabs > li > a {
+    background-color: #f8f9fa;
+    border-radius: 5px 5px 0 0;
+    margin-right: 5px;
+}
+
+.nav-tabs > li.active > a {
+    background-color: #3a7bd5;
+    color: white;
+}
+
+/* Estilo para los campos */
+.o_form_label {
+    font-weight: bold;
+    color: #495057;
+}
+
+/* Resaltar campos requeridos */
+.o_required_modifier .o_form_label:after {
+    color: #dc3545;
+}
+
+/* Estilo para los botones */
+.btn-primary {
+    background-color: #3a7bd5;
+    border-color: #2c6ac8;
+}
+
+.btn-primary:hover {
+    background-color: #2c6ac8;
+}
+
+/* Ajustar el ancho de los campos de entrada */
+.o_form_view .o_group .o_field_widget {
+    width: 100% !important;
+}
+
+/* Estilo para el campo de imagen */
+.o_form_image_controls {
+    background: rgba(58, 123, 213, 0.8);
+}
+
+/* Personalizar cards de variantes */
+.o_product_variant_card {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.o_product_variant_card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
