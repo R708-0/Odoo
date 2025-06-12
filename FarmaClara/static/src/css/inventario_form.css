@@ -1,0 +1,19 @@
+/* Estilos para el formulario de producto */
+
+/* Cambiar el color del nombre del producto */
+.o_form_view .o_input {
+    width: auto;
+    height: 40px;
+    padding: 0 0 0 16px;
+    border-radius: 9px;
+    outline: none;
+    background-color: #F2F2F2;
+    border: 1px solid #e5e5e500;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+.o_form_view.o_product form select,
+.o_form_view.o_product form textarea {
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
