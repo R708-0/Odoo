@@ -3,7 +3,7 @@
 /* Cambiar el color del nombre del producto */
 .o_form_view .o_input {
     width: auto;
-    height: 40px;
+    height: 1.5rem;
     padding: 0 0 0 16px;
     border-radius: 9px;
     outline: none;
@@ -16,4 +16,8 @@
     background-color: #f9f9f9;
     border-radius: 6px;
     border: 1px solid #aaa;
+}
+
+.breadcrumb > a{
+    color: #db3498 !important; 
 }
