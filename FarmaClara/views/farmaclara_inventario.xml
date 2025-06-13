@@ -50,6 +50,7 @@
                 <group>
                     <field name="list_price"/>
                     <field name="default_code"/>
+                    <field name="available_in_pos">True</field>
                 </group>
             </xpath>
 
@@ -66,6 +67,7 @@
                 <attribute name="invisible">1</attribute>
             </xpath>
             <xpath expr="//div[@class='oe_chatter']" position="replace"/>
+            <xpath expr="//button[@name='action_open_documents']" position="replace"/>
             <xpath expr="//header" position="replace"/>
         </field>
     </record>
@@ -76,9 +78,7 @@
         <field name="model">product.template</field>
         <field name="inherit_id" ref="point_of_sale.product_template_form_view"/>
         <field name="arch" type="xml">
-            <field name="available_in_pos" position="attributes">
-                <attribute name="default">True</attribute>
-            </field>
+            <field name="available_in_pos">True</field>
         </field>
     </record>
   
