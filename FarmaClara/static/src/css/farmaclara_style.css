@@ -13,8 +13,8 @@
 }
 .btn-outline-primary:hover{
     color: white !important;
-    border-color: #3498db !important;
-    background-color: #3498db !important;
+    border-color: #db3498 !important;
+    background-color: #db3498 !important;
 }
 
 /* cambiar color de la barra de navegacion */

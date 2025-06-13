@@ -11,13 +11,16 @@
     border: 1px solid #e5e5e500;
     transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
+.o_form_view .o_input:focus{
+    outline: none;
+    border: solid 1px black;
+}
 .o_form_view.o_product form select,
 .o_form_view.o_product form textarea {
-    background-color: #f9f9f9;
+    background-color: white;
     border-radius: 6px;
     border: 1px solid #aaa;
 }
-
-.breadcrumb > a{
-    color: #db3498 !important; 
+.text-truncate {
+    color: black;
 }
