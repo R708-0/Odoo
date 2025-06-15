@@ -70,7 +70,7 @@
             <xpath expr="//page[@name='variants']" position="attributes">
                 <attribute name="string">Laboratorios &amp; Variantes</attribute>
             </xpath>
-            <xpath expr="//page[@name='pos_categ_ids']" position="attributes">
+            <xpath expr="//field[@name='pos_categ_ids']" position="attributes">
                 <attribute name="string">Categoría</attribute>
             </xpath>
             
