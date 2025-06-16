@@ -51,8 +51,12 @@
                 <group>
                     <field name="default_code"/>
                     <field name="list_price"/>
-                    <!-- <field name="available_in_pos">True</field> -->
                     <field name="pos_categ_ids" widget="many2many_tags" groups="point_of_sale.group_pos_user"  string="Category"/>
+                </group>
+                <group>
+                    <field name="available_in_pos">True</field>
+                    <!-- <field name="fecha_vencimiento"/>
+                    <field name="presentacion"/> -->
                 </group>
             </xpath>
 
@@ -63,9 +67,6 @@
             <xpath expr="//field[@name='name']" position="attributes">
                 <attribute name="string">Nombre Generico </attribute>
                 <attribute name="placeholder">Ej. Amoxicilina</attribute>  
-            </xpath>
-            <xpath expr="//field[@name='default_code']" position="attributes">
-                <attribute name="string">Nombre (laboratorio)</attribute>
             </xpath>
             <xpath expr="//page[@name='variants']" position="attributes">
                 <attribute name="string">Laboratorios &amp; Variantes</attribute>
