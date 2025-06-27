@@ -49,7 +49,7 @@
             <!-- agrupar campos necesarios -->
             <xpath expr="//group[@name='group_general']" position="before">
                 <group>
-                    <field name='detailed_type' invisible='1'/>
+                    <field name='detailed_type' invisible='0'/>
                     <field name="default_code"/>
                     <field name="list_price"/>
                     <field name="pos_categ_ids" widget="many2many_tags" groups="point_of_sale.group_pos_user"  string="Category"/>
@@ -63,7 +63,7 @@
 
             <!-- modificar atributos  -->
             <xpath expr="//field[@name='default_code']" position="attributes">
-                <attribute name="string">Nombre (laboratorio)</attribute>
+                <attribute name="string">Nombre Comercial</attribute>
             </xpath>
             <xpath expr="//field[@name='name']" position="attributes">
                 <attribute name="string">Nombre Generico </attribute>
