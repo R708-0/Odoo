@@ -7,6 +7,7 @@
     "data":[
         'views/farmaclara_ventas.xml',
         'views/farmaclara_inventario.xml',
+        'views/assets.xml',
     ],
     "assets":{
         'web.assets_backend':[
