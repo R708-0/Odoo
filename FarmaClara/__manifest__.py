@@ -7,16 +7,18 @@
     "data":[
         'views/farmaclara_ventas.xml',
         'views/farmaclara_inventario.xml',
-        'views/assets.xml',
+        #'views/assets.xml',
     ],
     "assets":{
         'web.assets_backend':[
             'FarmaClara/static/src/css/farmaclara_style.css',
             'FarmaClara/static/src/css/inventario_form.css',
+            'FarmaClara/static/src/scss/login.scss',
         ],
         'web.assets_frontend':[
             'FarmaClara/static/src/css/farmaclara_style.css',
             'FarmaClara/static/src/css/inventario_form.css',
+            'FarmaClara/static/src/scss/login.scss',
         ],
     },
 
