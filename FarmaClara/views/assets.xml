@@ -1,0 +1,7 @@
+<odoo>
+    <template id="farmaclara_assets" name="farmaclara_login_assets" inherit_id="web.assets_frontend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="Farmaclara/static/src/scss/login.scss"/>
+        </xpath>
+    </template>
+</odoo>
