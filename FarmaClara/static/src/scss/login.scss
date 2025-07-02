@@ -1,0 +1,39 @@
+.o_web_client .oe_website_login_container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('/Farmaclara/static/src/img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .oe_login_form, .oe_signup_form, .oe_reset_password_form {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        
+        .form-control {
+            border-radius: 4px;
+        }
+        
+        .btn-primary {
+            background-color: #3a7bd5;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 16px;
+        }
+    }
+    
+    .oe_login_buttons {
+        text-align: center;
+        margin-top: 1rem;
+        
+        a {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+}
