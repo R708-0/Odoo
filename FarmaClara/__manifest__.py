@@ -3,10 +3,12 @@
     "author": "Diego Melgar Parada",
     "description": "Sistema de farmacias",
     "version": "1.0.1",
-    "depends":['base','product','stock','point_of_sale','web'],
+    "depends":['base','product','stock','purchase','point_of_sale','web'],
     "data":[
+        'views/farmaclara_tablero.xml',
         'views/farmaclara_ventas.xml',
         'views/farmaclara_inventario.xml',
+        'views/farmaclara_compras.xml',
         #'views/assets.xml',
     ],
     "assets":{
