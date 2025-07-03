@@ -113,5 +113,5 @@
         <field name="view_mode">kanban,form,tree</field>
     </record>
     <!-- crear menu  -->
-    <menuitem id="menu_farmaclara_inventario" action="farmaclara_inventario_action_view" parent="FarmaClara.menu_farmaclara_tablero"/>
+    <menuitem id="menu_farmaclara_inventario" action="farmaclara_inventario_action_view" parent="FarmaClara.menu_farmaclara_ventas" sequence="10"/>
 </odoo>
