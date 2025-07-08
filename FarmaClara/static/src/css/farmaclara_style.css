@@ -27,7 +27,20 @@
     background-color: #3498db !important;
     
 }
-
-/* .o_form_view .o_form_label {
-    font-size: 1rem !important;
-} */
+/* checkbox */
+.form-check-input:checked {
+    background-color: #28a745 !important;
+    border-color: #218838 !important;
+}
+/* botones de tips */
+.o_tour_pointer .o_tour_pointer_tip{
+    background-color:#db3498 !important;
+    background-image:radial-gradient(#db3498,#df1990 ) !important;
+}
+/* botones superiores form */
+.o-form-buttonbox .oe_stat_button .o_button_icon{
+    color :#3498db !important;
+}
+.o-form-buttonbox .o_pie_value, .o-form-buttonbox .oe_stat_button .o_stat_info .o_stat_value, .o-form-buttonbox .oe_stat_button > span .o_stat_value, .o-form-buttonbox .oe_stat_button .o_field_statinfo .o_stat_value{
+    color :#3498db !important;
+}

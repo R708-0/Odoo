@@ -1,3 +1,3 @@
 <odoo>
-    <menuitem id="menu_farmaclara_tablero" name="Informe" parent='FarmaClara.menu_farmaclara_ventas' action="spreadsheet_dashboard.ir_actions_dashboard_action" sequence="12"/>
+    <menuitem id="menu_farmaclara_tablero" name="Informe" parent="FarmaClara.menu_farmaclara_ventas" action="spreadsheet_dashboard.ir_actions_dashboard_action" sequence="12"/>
 </odoo>
