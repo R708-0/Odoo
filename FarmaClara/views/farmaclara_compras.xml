@@ -2,10 +2,10 @@
     <record id="farmaclara_compras_filter_view" model="ir.ui.view">
         <field name="name">farmaclara.compras.filter.view</field>
         <field name="model">purchase.order</field>
-        <field name="inherit_id" ref="purchase.view_purchase_order_filter"/>
+        <field name="inherit_id" ref="purchase.view_purchase_order_kanban"/>
         <field name="arch" type="xml">
-            <xpath expr="//filter[@name='my_Orders']" position="attributes">
-                <attributes name="string">miscosos</attributes>
+            <xpath expr="//field[@name='name']" position="after">
+                <label string="hola"/>
             </xpath>
         </field>
     </record>
@@ -15,5 +15,5 @@
         <field name="res_model">purchase.order</field>
         <field name="view_mode">form,kanban,tree</field>
     </record>
-    <menuitem id="menu_farmaclara_compras" parent="FarmaClara.menu_farmaclara_ventas" name ="Compras" action="farmaclara_compras_action_view" sequence="11"/>
+    <menuitem id="menu_farmaclara_compras" parent="FarmaClara.menu_farmaclara_ventas" name ="Compras" action="FarmaClara.farmaclara_compras_action_view" sequence="11"/>
 </odoo>
