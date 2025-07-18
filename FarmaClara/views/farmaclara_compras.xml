@@ -1,12 +1,14 @@
 <odoo>
-    <record id="farmaclara_compras_filter_view" model="ir.ui.view">
+    <record id="farmaclara_compras_tree_view" model="ir.ui.view">
         <field name="name">farmaclara.compras.filter.view</field>
         <field name="model">purchase.order</field>
-        <field name="inherit_id" ref="purchase.view_purchase_order_kanban"/>
+        <field name="inherit_id" ref="purchase.purchase_order_view_tree"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='name']" position="after">
-                <label string="hola"/>
-            </xpath>
+            <field name="priority" position="replace"/>
+            <field name="activity_ids" position="replace"/>
+            <field name="origin" position="replace"/>
+            <!-- <field name="state" position="replace"/> -->
+            <field name="date_planned" position="replace"/>
         </field>
     </record>
 
@@ -14,6 +16,7 @@
         <field name="name">Compras</field>
         <field name="res_model">purchase.order</field>
         <field name="view_mode">form,kanban,tree</field>
+        
     </record>
     <menuitem id="menu_farmaclara_compras" parent="FarmaClara.menu_farmaclara_ventas" name ="Compras" action="FarmaClara.farmaclara_compras_action_view" sequence="11"/>
 </odoo>
