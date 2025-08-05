@@ -1,4 +1,5 @@
 <odoo>
+    <!-- modificar vista tree -->
     <record id="farmaclara_compras_tree_view" model="ir.ui.view">
         <field name="name">farmaclara.compras.tree.view</field>
         <field name="model">purchase.order</field>
@@ -12,6 +13,17 @@
             </xpath>
             <xpath expr="//field[@name='date_planned']" position="attributes">
                 <attribute name="optional">hide</attribute>
+            </xpath>
+        </field>
+    </record>
+    <!-- modificar vista form -->
+    <record id="farmaclara_compras_form_view" model="ir.ui.view">
+        <field name="name">farmaclara.compras.form.view</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath exp="//field[@name='partner_id']" position="attributes">
+                <attribute name="string">Laboratorio</attribute>
             </xpath>
         </field>
     </record>
