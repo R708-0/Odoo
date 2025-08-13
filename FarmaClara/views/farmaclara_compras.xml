@@ -28,10 +28,38 @@
             <xpath expr="//div[@name='date_planned_div']" position="attributes">
                 <attribute name="invisible">1</attribute>
             </xpath>
-
-            <xpath expr="//field[@name='partner_id']" position="attributes">
-                <attribute name="string">Laboratorio</attribute>
+            <xpath expr="//div[@name='reminder']" position="attributes">
+                <attribute name="invisible">1</attribute>
             </xpath>
+
+            <!-- modificar strings -->
+            <xpath expr="//field[@name='date_order']" position="attributes">
+                <attribute name="string">Fecha de Compra</attribute>
+            </xpath>
+
+            <!-- modificar pestañas de producto -->
+            <xpath expr="//page[@name='purchase_delivery_invoice']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree/field[@name='taxes_id']" position="attributes">
+                <attribute name="column_invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree/field[@name='price_subtotal']" position="attributes">
+                <attribute name="column_invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree/field[@name='price_total']" position="attributes">
+                <attribute name="string">Subtotal</attribute>
+            </xpath>
+            <xpath expr="//div[@class='o_row']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <!-- quitar botones de la parte inferior -->
+            <xpath expr="//div[@class='oe_chatter']" position="replace"/>
+            <xpath expr="//field[@name='notes']" position="attributes">
+                <attribute name="placeholder">Puede agregar una nota a la compra</attribute>
+            </xpath>
+            
         </field>
     </record>
 
