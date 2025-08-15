@@ -50,12 +50,16 @@
             <xpath expr="//field[@name='order_line']/tree/field[@name='price_total']" position="attributes">
                 <attribute name="string">Subtotal</attribute>
             </xpath>
-            <xpath expr="//div[@class='o_row']" position="attributes">
-                <attribute name="invisible">1</attribute>
+                <!-- seccion de totales -->
+            <xpath expr="//group[@class='oe_subtotal_footer']" position="replace">
+                <group class="oe_subtotal_footer">
+                    <field name="amount_total" readonly="1"/>
+                </group>
             </xpath>
 
             <!-- quitar botones de la parte inferior -->
             <xpath expr="//div[@class='oe_chatter']" position="replace"/>
+            
             <xpath expr="//field[@name='notes']" position="attributes">
                 <attribute name="placeholder">Puede agregar una nota a la compra</attribute>
             </xpath>
