@@ -14,6 +14,9 @@
             <xpath expr="//field[@name='date_planned']" position="attributes">
                 <attribute name="optional">hide</attribute>
             </xpath>
+            <xpath expr="//field[@name='user_id']" position="attributes">
+                <attribute name="optional">hide</attribute>
+            </xpath>
         </field>
     </record>
     <!-- modificar vista form -->
@@ -22,6 +25,16 @@
         <field name="model">purchase.order</field>
         <field name="inherit_id" ref="purchase.purchase_order_form"/>
         <field name="arch" type="xml">
+            <!-- eliminar elementos del header -->
+            <xpath expr="//button[@name='action_rfq_send']" position="replace"/>
+            <xpath expr="//button[@name='print_quotation']" position="replace"/>
+            <xpath expr="//field[@name='state']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//button[@name='button_confirm']" position="after">
+                <button name="button_confirm2" type="object" class="btn-primary"/>
+            </xpath>
+
             <!-- eliminar campos innecesarios -->
             <xpath expr="//field[@name='partner_ref']" position="replace"/>
             <xpath expr="//field[@name='currency_id']" position="replace"/>
@@ -70,7 +83,7 @@
     <record id="farmaclara_compras_action_view" model="ir.actions.act_window">
         <field name="name">Compras</field>
         <field name="res_model">purchase.order</field>
-        <field name="view_mode">tree,kanban,form</field>
+        <field name="view_mode">tree,form,pivot,graph,calendar</field>
         <field name="view_id" ref="FarmaClara.farmaclara_compras_tree_view"/>
         
     </record>
