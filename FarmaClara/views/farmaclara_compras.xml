@@ -24,7 +24,7 @@
         <field name="name">farmaclara.compras.form.view</field>
         <field name="model">purchase.order</field>
         <field name="inherit_id" ref="purchase.purchase_order_form"/>
-        <field name="priority">100</field>
+        <field name="priority">30</field>
         <field name="arch" type="xml">
             <!-- eliminar elementos del header -->
             <xpath expr="//button[@name='action_rfq_send']" position="replace"/>
@@ -32,7 +32,7 @@
             <xpath expr="//field[@name='state']" position="attributes">
                 <attribute name="invisible">1</attribute>
             </xpath>
-            <xpath expr="//button[@name='button_confirm']" position="attributes">
+            <xpath expr="//button[@id='draft_confirm']" position="attributes">
                 <attribute name="class">btn-primary</attribute>
                 <attribute name="string">Confirmar Compra</attribute>
             </xpath>

@@ -1,4 +1,37 @@
 <odoo>
+    <!-- heredar vista tree -->
+    <record id = "farmaclara_inventario_tree_view" model = "ir.ui.view">
+        <field name = "name">farmaclara.inventario.tree.view</field>
+        <field name = "model">product.template</field>
+        <field name = "inherit_id" ref = "product.product_template_tree_view"></field>
+        <field name = "arch" type = "xml">
+            <xpath expr = "//field[@name='default_code']" position = "attributes">
+                <attribute name = "string">Nombre Comercial</attribute>
+            </xpath>
+            <xpath expr = "//field[@name='default_code']" position = "after">
+                <field name = "fecha_vencimiento"/>
+            </xpath>
+            <xpath expr = "//field[@name='qty_available']" position = "attributes">
+                <attribute name = "string">Cantidad</attribute>
+            </xpath>
+            <xpath expr="//field[@name='priority']" position="attributes">
+                <attribute name="optional">hide</attribute>
+            </xpath>
+            <xpath expr="//field[@name='product_tag_ids']" position="attributes">
+                <attribute name="optional">hide</attribute>
+            </xpath>
+            <xpath expr="//field[@name='standard_price']" position="attributes">
+                <attribute name="optional">hide</attribute>
+            </xpath>
+            <xpath expr="//field[@name='virtual_available']" position="attributes">
+                <attribute name="optional">hide</attribute>
+            </xpath>
+            <xpath expr="//field[@name='uom_id']" position="attributes">
+                <attribute name="optional">hide</attribute>
+            </xpath>
+        
+        </field>
+    </record>
     <!-- heredar vista kanban -->
     <record id="farmaclara_inventario_kanban_view" model="ir.ui.view">
         <field name="name">farmaclara.inventario.kanban.view</field>
@@ -44,6 +77,12 @@
                 <attribute name="invisible">1</attribute>
             </xpath>
             <xpath expr="//field[@name='product_tooltip']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='uom_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='uom_po_id']" position="attributes">
                 <attribute name="invisible">1</attribute>
             </xpath>
             

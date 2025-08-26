@@ -20,12 +20,12 @@ class Compras(models.Model):
                 # 3. Validar directamente la recepción
                 picking.button_validate()
             
-            #redirigir a la vista tree
+        # redirigir a la vista tree
         action = self.env.ref('FarmaClara.farmaclara_compras_action_view').read()[0]
         return action
 
-            # 4. Crear y validar factura de proveedor (versión Odoo 17)
-            # if not order.invoice_ids:
-            #     invoice_vals = order._prepare_invoice()
-            #     invoice = self.env['account.move'].create(invoice_vals)
-            #     invoice.action_post()
+        # 4. Crear y validar factura de proveedor (versión Odoo 17)
+        # if not order.invoice_ids:
+        #     invoice_vals = order._prepare_invoice()
+        #     invoice = self.env['account.move'].create(invoice_vals)
+        #     invoice.action_post()
