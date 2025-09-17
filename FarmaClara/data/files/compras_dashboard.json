@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "sheets": [
+    {
+      "id": "sheet1",
+      "name": "Compras",
+      "cells": {
+        "A1": {"content": "Dashboard de Compras Personalizado"}
+      }
+    }
+  ]
+}
