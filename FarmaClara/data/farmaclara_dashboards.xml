@@ -3,11 +3,10 @@
     <!-- Eliminar la pestaña de Facturación / Invoicing -->
     <record id="spreadsheet_dashboard_farmaclara_otro" model="spreadsheet.dashboard">
         <field name="name">Tablero</field>
-        <field name="spreadsheet_binary_data" type="base64" file="FarmaClara/data/files/compras_dashboard.json"></field>
+        <field name="spreadsheet_binary_data" type="base64" file="FarmaClara\data\files\compras_dashboard.json"></field>
         <field name="dashboard_group_id" ref="spreadsheet_dashboard.spreadsheet_dashboard_group_finance"/>
         <!-- Opcional: restricciones por grupos de usuarios -->
         <field name="group_ids" eval="[Command.link(ref('account.group_account_readonly')), Command.link(ref('account.group_account_invoice'))]"/>
         <field name="sequence">50</field>
     </record>
-
-</odoo>trew 
+</odoo>
