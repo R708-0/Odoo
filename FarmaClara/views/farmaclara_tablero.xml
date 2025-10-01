@@ -1,3 +1,14 @@
 <odoo>
+    <record id="farmaclara_dashboard_view_list" model="ir.ui.view">
+        <field name="name">farmaclara.dashboard.view.list</field>
+        <field name="model">spreadsheet.dashboard</field>
+        <field name="inherit_id" ref="spreadsheet_dashboard.spreadsheet_dashboard_view_list"/>
+        <field name="arch" type="xml">
+            <field name="name" position="replace">
+                <field name="name" domain="[('id','!=', ref('spreadsheet_dashboard_account.dashboard_invoicing'))]"/>
+            </field>
+        </field>
+    </record>
+
     <menuitem id="menu_farmaclara_tablero" name="Informe" parent="FarmaClara.menu_farmaclara_ventas" action="spreadsheet_dashboard.ir_actions_dashboard_action" sequence="12"/>
 </odoo>

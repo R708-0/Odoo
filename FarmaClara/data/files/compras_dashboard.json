@@ -524,7 +524,7 @@
                 },
                 {
                     "id": "3026e15a-cf89-4626-b40d-d61b0d802cd4",
-                    "x": 0,
+                    "x": 100,
                     "y": 0,
                     "width": 200,
                     "height": 120,
@@ -533,17 +533,18 @@
                         "baselineColorDown": "#DC6965",
                         "baselineColorUp": "#00A04A",
                         "baselineMode": "percentage",
-                        "title": "Total Gastado",
+                        "title": "Total Gastado en BS",
                         "type": "scorecard",
                         "background": "",
                         "baseline": "Data!E2",
                         "baselineDescr": "since last period",
-                        "keyValue": "Data!D2"
+                        "keyValue": "Data!D2",
+                        "keyPrefix": " Bs"
                     }
                 },
                 {
                     "id": "bf0b19f1-c857-463c-ab3b-501de4bac427",
-                    "x": 210,
+                    "x": 310,
                     "y": 0,
                     "width": 200,
                     "height": 120,
@@ -552,31 +553,33 @@
                         "baselineColorDown": "#DC6965",
                         "baselineColorUp": "#00A04A",
                         "baselineMode": "percentage",
-                        "title": "Total Compras",
+                        "title": "Total Compras en BS",
                         "type": "scorecard",
                         "background": "",
                         "baseline": "Data!E3",
                         "baselineDescr": "since last period",
-                        "keyValue": "Data!D3"
+                        "keyValue": "Data!D3",
+                        "keySuffix": " Bs"
                     }
                 },
                 {
                     "id": "f146ff41-fce3-4f51-a21c-f0903a4e2c96",
-                    "x": 420,
+                    "x": 520,
                     "y": 0,
-                    "width": 200,
+                    "width": 240,
                     "height": 120,
                     "tag": "chart",
                     "data": {
                         "baselineColorDown": "#DC6965",
                         "baselineColorUp": "#00A04A",
                         "baselineMode": "percentage",
-                        "title": "Promedio por Compra",
+                        "title": "Promedio por Compra en BS",
                         "type": "scorecard",
                         "background": "",
                         "baseline": "Data!E4",
                         "baselineDescr": "since last period",
-                        "keyValue": "Data!D4"
+                        "keyValue": "Data!D4",
+                        "keySuffix": " Bs"
                     }
                 }
                 

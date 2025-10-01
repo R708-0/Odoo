@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!-- Eliminar la pestaña de Facturación / Invoicing -->
+
     <record id="spreadsheet_dashboard_farmaclara_otro" model="spreadsheet.dashboard">
         <field name="name">Tablero Compras</field>
         <field name="spreadsheet_binary_data" type="base64" file="FarmaClara\data\files\compras_dashboard.json"></field>
