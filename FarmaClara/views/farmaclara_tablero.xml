@@ -1,12 +1,15 @@
 <odoo>
-    <record id="farmaclara_dashboard_view_list" model="ir.ui.view">
+    <record id="spreadsheet_dashboard_container_view_list" model="ir.ui.view">
         <field name="name">farmaclara.dashboard.view.list</field>
-        <field name="model">spreadsheet.dashboard</field>
-        <field name="inherit_id" ref="spreadsheet_dashboard.spreadsheet_dashboard_view_list"/>
+        <field name="model">spreadsheet.dashboard.group</field>
+        <field name="inherit_id" ref="spreadsheet_dashboard.spreadsheet_dashboard_container_view_list"/>
         <field name="arch" type="xml">
-            <field name="name" position="replace">
-                <field name="name" domain="[('id','!=', ref('spreadsheet_dashboard_account.dashboard_invoicing'))]"/>
-            </field>
+            <xpath expr="//tree" position="replace">
+                <tree string="cosos">
+                    <field name="sequence" widget="handle" groups="base.group_system"/>
+                    <field name="name"/>
+                </tree>
+            </xpath>
         </field>
     </record>
 
