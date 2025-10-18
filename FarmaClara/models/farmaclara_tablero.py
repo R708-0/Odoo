@@ -5,7 +5,8 @@ from odoo import _, models, fields
 class FarmaClaraTablero(models.Model):
     _inherit = "spreadsheet.dashboard"
 
-
+    dashboard_group_id = fields.Many2one('spreadsheet.dashboard.group', required=False)
+    
     def get_readonly_dashboard(self):
         self.ensure_one()
 

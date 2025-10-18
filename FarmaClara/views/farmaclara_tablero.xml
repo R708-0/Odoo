@@ -1,16 +1,6 @@
 <odoo>
-    <record id="spreadsheet_dashboard_container_view_list" model="ir.ui.view">
-        <field name="name">farmaclara.dashboard.view.list</field>
-        <field name="model">spreadsheet.dashboard.group</field>
-        <field name="inherit_id" ref="spreadsheet_dashboard.spreadsheet_dashboard_container_view_list"/>
-        <field name="arch" type="xml">
-            <xpath expr="//tree" position="replace">
-                <tree string="cosos">
-                    <field name="sequence" widget="handle" groups="base.group_system"/>
-                    <field name="name"/>
-                </tree>
-            </xpath>
-        </field>
+    <record id="spreadsheet_dashboard_account.dashboard_invoicing" model="spreadsheet.dashboard">
+        <field name="dashboard_group_id" ref=" "/>
     </record>
 
     <menuitem id="menu_farmaclara_tablero" name="Informe" parent="FarmaClara.menu_farmaclara_ventas" action="spreadsheet_dashboard.ir_actions_dashboard_action" sequence="12"/>
