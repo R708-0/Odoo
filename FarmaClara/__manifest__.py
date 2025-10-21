@@ -16,13 +16,13 @@
             'FarmaClara/static/src/css/farmaclara_style.css',
             'FarmaClara/static/src/css/inventario_form.css',
             'FarmaClara/static/src/scss/login.scss',
-            'FarmaClara\src\assets\farmaclara_dashboard.js',
+            'FarmaClara/src/assets/farmaclara_dashboard.js',
         ],
         'web.assets_frontend':[
             'FarmaClara/static/src/css/farmaclara_style.css',
             'FarmaClara/static/src/css/inventario_form.css',
             'FarmaClara/static/src/scss/login.scss',
-            'FarmaClara\src\assets\farmaclara_dashboard.js',
+            'FarmaClara/src/assets/farmaclara_dashboard.js',
         ],
     },
 

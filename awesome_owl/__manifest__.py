@@ -7,11 +7,11 @@
         'views/assets.xml',
     ],
     "assets": {
-        'web.assets_backend': [
+        'web.assets_backend':[
             '/awesome_owl/static/src/mi_componente.js',
             '/awesome_owl/static/src/mi_componente.xml',
         ],
-    }
+    },
 
     "installable" : True,
     "application" : False,

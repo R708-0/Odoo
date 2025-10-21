@@ -2,7 +2,7 @@
 <odoo>
     <!-- crear grupo personalizado -->
     <record id ="spreadsheet_dashboard_otros" model="spreadsheet.dashboard.group">
-        <field name="name">Otros</field>
+        <field name="name">Informes</field>
         <field name="sequence">900</field>
     </record>
 
