@@ -68,13 +68,13 @@
             "cells": {
                 "A7": {
                     "style": 1,
-                    "content": "[Amount Purchased](odoo://view/{\"viewType\":\"graph\",\"action\":{\"domain\":[\"&\",\"&\",[\"state\",\"!=\",\"draft\"],[\"state\",\"!=\",\"sent\"],[\"state\",\"!=\",\"cancel\"]],\"context\":{\"group_by\":[\"date_order:month\"],\"graph_measure\":\"untaxed_total\",\"graph_mode\":\"line\",\"graph_groupbys\":[\"date_order:month\"]},\"modelName\":\"purchase.report\",\"views\":[[false,\"graph\"],[false,\"search\"]]},\"threshold\":0,\"name\":\"Amount Purchased\"})",
+                    "content": "[Amount Purchased](odoo://view/{\"viewType\":\"graph\",\"action\":{\"domain\":[\"&\",\"&\",[\"state\",\"!=\",\"draft\"],[\"state\",\"!=\",\"sent\"],[\"state\",\"!=\",\"cancel\"]],\"context\":{\"group_by\":[\"date_order:month\"],\"graph_measure\":\"price_total\",\"graph_mode\":\"line\",\"graph_groupbys\":[\"date_order:month\"]},\"modelName\":\"purchase.report\",\"views\":[[false,\"graph\"],[false,\"search\"]]},\"threshold\":0,\"name\":\"Amount Purchased\"})",
                     "border": 1
                 },
                 
                 "A19": {
                     "style": 1,
-                    "content": "[Top Orders](odoo://view/{\"viewType\":\"list\",\"action\":{\"domain\":[[\"state\",\"in\",[\"purchase\",\"done\"]]],\"context\":{\"group_by\":[]},\"modelName\":\"purchase.order\",\"views\":[[false,\"list\"],[false,\"kanban\"],[false,\"form\"],[false,\"pivot\"],[false,\"graph\"],[false,\"calendar\"],[false,\"activity\"],[false,\"search\"]]},\"threshold\":0,\"name\":\"Top Orders\"})",
+                    "content": "[Compras principales](odoo://view/{\"viewType\":\"list\",\"action\":{\"domain\":[[\"state\",\"in\",[\"purchase\",\"done\"]]],\"context\":{\"group_by\":[]},\"modelName\":\"purchase.order\",\"views\":[[false,\"list\"],[false,\"kanban\"],[false,\"form\"],[false,\"pivot\"],[false,\"graph\"],[false,\"calendar\"],[false,\"activity\"],[false,\"search\"]]},\"threshold\":0,\"name\":\"Top Orders\"})",
                     "border": 1
                 },
                 "A20": {
@@ -264,7 +264,7 @@
                 
                 "G19": {
                     "style": 1,
-                    "content": "[Top Products](odoo://view/{\"viewType\":\"pivot\",\"action\":{\"domain\":[[\"product_id\",\"!=\",false]],\"context\":{\"group_by\":[\"product_id\"],\"pivot_measures\":[\"order_id\",\"qty_ordered\",\"untaxed_total\"],\"pivot_column_groupby\":[],\"pivot_row_groupby\":[\"product_id\"]},\"modelName\":\"purchase.report\",\"views\":[[false,\"graph\"],[false,\"pivot\"],[false,\"search\"]]},\"threshold\":0,\"name\":\"Top Products\"})",
+                    "content": "[Top Products](odoo://view/{\"viewType\":\"pivot\",\"action\":{\"domain\":[[\"product_id\",\"!=\",false]],\"context\":{\"group_by\":[\"product_id\"],\"pivot_measures\":[\"order_id\",\"qty_ordered\",\"price_total\"],\"pivot_column_groupby\":[],\"pivot_row_groupby\":[\"product_id\"]},\"modelName\":\"purchase.report\",\"views\":[[false,\"graph\"],[false,\"pivot\"],[false,\"search\"]]},\"threshold\":0,\"name\":\"Top Products\"})",
                     "border": 1
                 },
                 "G20": {
@@ -375,47 +375,47 @@
                 "I21": {
                     "style": 12,
                     "format": 3,
-                    "content": "=ODOO.PIVOT(7,\"untaxed_total\",\"#product_id\",1)"
+                    "content": "=ODOO.PIVOT(7,\"price_total\",\"#product_id\",1)"
                 },
                 "I22": {
                     "format": 3,
-                    "content": "=ODOO.PIVOT(7,\"untaxed_total\",\"#product_id\",2)"
+                    "content": "=ODOO.PIVOT(7,\"price_total\",\"#product_id\",2)"
                 },
                 "I23": {
                     "style": 12,
                     "format": 3,
-                    "content": "=ODOO.PIVOT(7,\"untaxed_total\",\"#product_id\",3)"
+                    "content": "=ODOO.PIVOT(7,\"price_total\",\"#product_id\",3)"
                 },
                 "I24": {
                     "format": 3,
-                    "content": "=ODOO.PIVOT(7,\"untaxed_total\",\"#product_id\",4)"
+                    "content": "=ODOO.PIVOT(7,\"price_total\",\"#product_id\",4)"
                 },
                 "I25": {
                     "style": 12,
                     "format": 3,
-                    "content": "=ODOO.PIVOT(7,\"untaxed_total\",\"#product_id\",5)"
+                    "content": "=ODOO.PIVOT(7,\"price_total\",\"#product_id\",5)"
                 },
                 "I26": {
                     "format": 3,
-                    "content": "=ODOO.PIVOT(7,\"untaxed_total\",\"#product_id\",6)"
+                    "content": "=ODOO.PIVOT(7,\"price_total\",\"#product_id\",6)"
                 },
                 "I27": {
                     "style": 12,
                     "format": 3,
-                    "content": "=ODOO.PIVOT(7,\"untaxed_total\",\"#product_id\",7)"
+                    "content": "=ODOO.PIVOT(7,\"price_total\",\"#product_id\",7)"
                 },
                 "I28": {
                     "format": 3,
-                    "content": "=ODOO.PIVOT(7,\"untaxed_total\",\"#product_id\",8)"
+                    "content": "=ODOO.PIVOT(7,\"price_total\",\"#product_id\",8)"
                 },
                 "I29": {
                     "style": 12,
                     "format": 3,
-                    "content": "=ODOO.PIVOT(7,\"untaxed_total\",\"#product_id\",9)"
+                    "content": "=ODOO.PIVOT(7,\"price_total\",\"#product_id\",9)"
                 },
                 "I30": {
                     "format": 3,
-                    "content": "=ODOO.PIVOT(7,\"untaxed_total\",\"#product_id\",10)"
+                    "content": "=ODOO.PIVOT(7,\"price_total\",\"#product_id\",10)"
                 },
                 "A8": {
                     "border": 2
@@ -487,7 +487,7 @@
                             "groupBy": [
                                 "date_order:month"
                             ],
-                            "measure": "untaxed_total",
+                            "measure": "price_total",
                             "order": null,
                             "resModel": "purchase.report"
                         },
@@ -623,7 +623,7 @@
                     "content": "=_t(\"Current\")"
                 },
                 "B2": {
-                    "content": "=ODOO.PIVOT(10,\"untaxed_total\")"
+                    "content": "=ODOO.PIVOT(10,\"price_total\")"
                 },
                 "B3": {
                     "content": "=ODOO.PIVOT(10,\"order_id\")"
@@ -645,7 +645,7 @@
                     "content": "=_t(\"Previous\")"
                 },
                 "C2": {
-                    "content": "=ODOO.PIVOT(11,\"untaxed_total\")"
+                    "content": "=ODOO.PIVOT(11,\"price_total\")"
                 },
                 "C3": {
                     "content": "=ODOO.PIVOT(11,\"order_id\")"
@@ -835,7 +835,7 @@
                 "create_date",
                 "partner_id",
                 "user_id",
-                "amount_untaxed"
+                "price_total"
             ],
             "domain": [
                 [
@@ -854,7 +854,7 @@
             },
             "orderBy": [
                 {
-                    "name": "amount_untaxed",
+                    "name": "price_total",
                     "asc": false
                 }
             ],
@@ -867,7 +867,7 @@
                 "date_approve",
                 "partner_id",
                 "user_id",
-                "amount_untaxed"
+                "price_total"
             ],
             "domain": [
                 [
@@ -883,7 +883,7 @@
             "context": {},
             "orderBy": [
                 {
-                    "name": "amount_untaxed",
+                    "name": "price_total",
                     "asc": false
                 }
             ],
@@ -947,7 +947,7 @@
                     "field": "order_id"
                 },
                 {
-                    "field": "untaxed_total"
+                    "field": "price_total"
                 }
             ],
             "model": "purchase.report",
@@ -960,7 +960,7 @@
                     [],
                     []
                 ],
-                "measure": "untaxed_total",
+                "measure": "price_total",
                 "order": "desc"
             }
         },
@@ -974,7 +974,7 @@
                     "field": "order_id"
                 },
                 {
-                    "field": "untaxed_total"
+                    "field": "price_total"
                 }
             ],
             "model": "purchase.report",
@@ -987,7 +987,7 @@
                     [],
                     []
                 ],
-                "measure": "untaxed_total",
+                "measure": "price_total",
                 "order": "desc"
             }
         },
@@ -1016,7 +1016,7 @@
                     "field": "qty_ordered"
                 },
                 {
-                    "field": "untaxed_total"
+                    "field": "price_total"
                 }
             ],
             "model": "purchase.report",
@@ -1029,7 +1029,7 @@
                     [],
                     []
                 ],
-                "measure": "untaxed_total",
+                "measure": "price_total",
                 "order": "desc"
             }
         },
@@ -1058,7 +1058,7 @@
                     "field": "qty_ordered"
                 },
                 {
-                    "field": "untaxed_total"
+                    "field": "price_total"
                 }
             ],
             "model": "purchase.report",
@@ -1071,7 +1071,7 @@
                     [],
                     []
                 ],
-                "measure": "untaxed_total",
+                "measure": "price_total",
                 "order": "desc"
             }
         },
@@ -1100,7 +1100,7 @@
                     "field": "qty_ordered"
                 },
                 {
-                    "field": "untaxed_total"
+                    "field": "price_total"
                 }
             ],
             "model": "purchase.report",
@@ -1113,7 +1113,7 @@
                     [],
                     []
                 ],
-                "measure": "untaxed_total",
+                "measure": "price_total",
                 "order": "desc"
             }
         },
@@ -1127,7 +1127,7 @@
                     "field": "order_id"
                 },
                 {
-                    "field": "untaxed_total"
+                    "field": "price_total"
                 },
                 {
                     "field": "delay_pass"
@@ -1147,7 +1147,7 @@
                     [],
                     []
                 ],
-                "measure": "untaxed_total",
+                "measure": "price_total",
                 "order": "desc"
             }
         },
@@ -1161,7 +1161,7 @@
                     "field": "order_id"
                 },
                 {
-                    "field": "untaxed_total"
+                    "field": "price_total"
                 },
                 {
                     "field": "delay_pass"
@@ -1181,7 +1181,7 @@
                     [],
                     []
                 ],
-                "measure": "untaxed_total",
+                "measure": "price_total",
                 "order": "desc"
             }
         }
