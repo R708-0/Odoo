@@ -79,7 +79,7 @@
                 },
                 "A20": {
                     "style": 2,
-                    "content": "=_t(\"Order\")",
+                    "content": "=_t(\"Referencia\")",
                     "border": 2
                 },
                 "A21": {
@@ -318,7 +318,7 @@
                
                 "H20": {
                     "style": 11,
-                    "content": "=_t(\"Qty Ordered\")",
+                    "content": "=_t(\"Cant. Comprada\")",
                     "border": 2
                 },
                 "H21": {
@@ -524,62 +524,61 @@
                 },
                 {
                     "id": "3026e15a-cf89-4626-b40d-d61b0d802cd4",
-                    "x": 100,
+                    "x": 0,
                     "y": 0,
-                    "width": 200,
+                    "width": 250,
                     "height": 120,
                     "tag": "chart",
                     "data": {
                         "baselineColorDown": "#DC6965",
                         "baselineColorUp": "#00A04A",
                         "baselineMode": "percentage",
-                        "title": "Total Gastado en BS",
+                        "title": "Total Gastado",
                         "type": "scorecard",
                         "background": "",
                         "baseline": "Data!E2",
                         "baselineDescr": "since last period",
-                        "keyValue": "Data!D2",
-                        "keyPrefix": " Bs"
+                        "keyValue": "Data!B2"
                     }
                 },
                 {
                     "id": "bf0b19f1-c857-463c-ab3b-501de4bac427",
-                    "x": 310,
+                    "x": 375,
                     "y": 0,
-                    "width": 200,
+                    "width": 250,
                     "height": 120,
                     "tag": "chart",
                     "data": {
                         "baselineColorDown": "#DC6965",
                         "baselineColorUp": "#00A04A",
                         "baselineMode": "percentage",
-                        "title": "Total Compras en BS",
+                        "title": "Compras realizadas",
                         "type": "scorecard",
                         "background": "",
                         "baseline": "Data!E3",
                         "baselineDescr": "since last period",
-                        "keyValue": "Data!D3",
-                        "keySuffix": " Bs"
+                        "keyValue": "Data!D3"
+                        
                     }
                 },
                 {
                     "id": "f146ff41-fce3-4f51-a21c-f0903a4e2c96",
-                    "x": 520,
+                    "x": 750,
                     "y": 0,
-                    "width": 240,
+                    "width": 250,
                     "height": 120,
                     "tag": "chart",
                     "data": {
                         "baselineColorDown": "#DC6965",
                         "baselineColorUp": "#00A04A",
                         "baselineMode": "percentage",
-                        "title": "Promedio por Compra en BS",
+                        "title": "Gasto promedio por Compra",
                         "type": "scorecard",
                         "background": "",
                         "baseline": "Data!E4",
                         "baselineDescr": "since last period",
-                        "keyValue": "Data!D4",
-                        "keySuffix": " Bs"
+                        "keyValue": "Data!D4"
+                    
                     }
                 }
                 
@@ -672,11 +671,11 @@
                 },
                 "D3": {
                     "style": 15,
-                    "content": "=FORMAT.LARGE.NUMBER(B3)"
+                    "content": "=CONCATENATE(FORMAT.LARGE.NUMBER(B3), \" Bs.\")"
                 },
                 "D4": {
                     "style": 15,
-                    "content": "=FORMAT.LARGE.NUMBER(B4)"
+                    "content": "=CONCATENATE(FORMAT.LARGE.NUMBER(B4), \" Bs.\")"
                 },
                 "D5": {
                     "style": 15,
@@ -719,6 +718,10 @@
                 "E7": {
                     "style": 15,
                     "content": "=FORMAT.LARGE.NUMBER(C7)"
+                },
+                "F2": {
+                    "style": 15,
+                    "content": "=CONCATENATE((B2), \" Bs.\")"
                 }
             },
             "conditionalFormats": [],
@@ -835,7 +838,7 @@
                 "create_date",
                 "partner_id",
                 "user_id",
-                "price_total"
+                "amount_total"
             ],
             "domain": [
                 [
@@ -854,7 +857,7 @@
             },
             "orderBy": [
                 {
-                    "name": "price_total",
+                    "name": "amount_total",
                     "asc": false
                 }
             ],
@@ -867,7 +870,7 @@
                 "date_approve",
                 "partner_id",
                 "user_id",
-                "price_total"
+                "amount_total"
             ],
             "domain": [
                 [
@@ -883,7 +886,7 @@
             "context": {},
             "orderBy": [
                 {
-                    "name": "price_total",
+                    "name": "amount_total",
                     "asc": false
                 }
             ],
