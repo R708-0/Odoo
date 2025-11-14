@@ -265,7 +265,7 @@
                 
                 "G20": {
                     "style": 9,
-                    "content": "=_t(\"Orders\")",
+                    "content": "=_t(\"Ventas\")",
                     "border": 2
                 },
                 "G21": {

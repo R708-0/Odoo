@@ -1,8 +1,0 @@
-
-<templates xml:space="preserve">
-    <t t-name="awesome_owl.MiComponenteTemplate">
-        <div class="alert alert-info">
-            <t t-esc="saludo"/>
-        </div>
-    </t>
-</templates>

@@ -1,10 +1,29 @@
 <odoo>
-    <!-- <record id="spreadsheet_dashboard_account.dashboard_invoicing" model="spreadsheet.dashboard">
+                              <!-- BORRAR LLOS GRUPOS DE TABLEROS -->
+     <!-- facturas -->
+    <record id="spreadsheet_dashboard_account.dashboard_invoicing" model="spreadsheet.dashboard">
          <field name="group_ids" eval="[(5, 0, 0)]"/>
-    </record> -->
-    <!-- <record id="spreadsheet_dashboard_purchase.spreadsheet_dashboard_vendors" model="spreadsheet.dashboard">
+    </record>
+
+     <!-- clientes -->
+    <record id="spreadsheet_dashboard_purchase.spreadsheet_dashboard_vendors" model="spreadsheet.dashboard">
          <field name="group_ids" eval="[(5, 0, 0)]"/>
-    </record> -->
+    </record>
+
+     <!-- ventas  -->
+     <record id="spreadsheet_dashboard_pos_hr.spreadsheet_dashboard_pos" model="spreadsheet.dashboard">
+          <field name="group_ids" eval="[(5, 0, 0)]"/>
+     </record>
+
+     <!-- compras -->
+     <record id="spreadsheet_dashboard_purchase_stock.spreadsheet_dashboard_purchase" model="spreadsheet.dashboard">
+          <field name="group_ids" eval="[(5, 0, 0)]"/>
+     </record>
+
+     <!-- stock -->
+     <record id="spreadsheet_dashboard_stock_account.spreadsheet_dashboard_inventory_on_hand" model="spreadsheet.dashboard">
+          <field name="group_ids" eval="[(5, 0 , 0)]"/>
+     </record>
 
     <menuitem id="menu_farmaclara_tablero" name="Informe" parent="FarmaClara.menu_farmaclara_ventas" action="spreadsheet_dashboard.ir_actions_dashboard_action" sequence="12"/>
 </odoo>
