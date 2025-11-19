@@ -15,3 +15,6 @@ export class Playground extends Component {
         this.state.value = this.state.value + 1;
     }
 }
+
+const actionRegistry = registry.category("actions");
+actionRegistry.add("awesome_owl.playground_action", Playground);

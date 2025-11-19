@@ -460,7 +460,7 @@
                 {
                     "id": "cfee1ef1-ac54-4e9f-bdde-0162652de2cf",
                     "x": 0,
-                    "y": 0,
+                    "y": 20,
                     "width": 200,
                     "height": 120,
                     "tag": "chart",
@@ -470,7 +470,7 @@
                         "baselineMode": "percentage",
                         "title": "Ventas totales",
                         "type": "scorecard",
-                        "background": "",
+                        "background": "#f0f8ff",
                         "baseline": "Data!E2",
                         "baselineDescr": "since last period",
                         "keyValue": "Data!D2"
@@ -478,8 +478,8 @@
                 },
                 {
                     "id": "d141cc35-0b60-4e91-b736-5c1453fea925",
-                    "x": 450,
-                    "y": 0,
+                    "x": 445,
+                    "y": 20,
                     "width": 200,
                     "height": 120,
                     "tag": "chart",
@@ -489,7 +489,7 @@
                         "baselineMode": "percentage",
                         "title": "Ingreso total",
                         "type": "scorecard",
-                        "background": "",
+                        "background": "#f0f8ff",
                         "baseline": "Data!E3",
                         "baselineDescr": "since last period",
                         "keyValue": "Data!D3"
@@ -497,8 +497,8 @@
                 },
                 {
                     "id": "615fb94e-8098-456e-9f71-7799b82f04c4",
-                    "x": 900,
-                    "y": 0,
+                    "x": 895,
+                    "y": 20,
                     "width": 200,
                     "height": 120,
                     "tag": "chart",
@@ -508,7 +508,7 @@
                         "baselineMode": "percentage",
                         "title": "Ingreso promedio",
                         "type": "scorecard",
-                        "background": "",
+                        "background": "#f0f8ff",
                         "baseline": "Data!E4",
                         "baselineDescr": "since last period",
                         "keyValue": "Data!D4"
@@ -517,7 +517,7 @@
                 {
                     "id": "e012bf45-55dc-4c46-b069-bc090a467d73",
                     "x": 0,
-                    "y": 178,
+                    "y": 183,
                     "width": 1100,
                     "height": 230,
                     "tag": "chart",

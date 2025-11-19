@@ -475,7 +475,7 @@
                 {
                     "id": "40aef9ad-8e20-47d1-861c-9e9121a4cdd0",
                     "x": 0,
-                    "y": 178,
+                    "y": 183,
                     "width": 1000,
                     "height": 230,
                     "tag": "chart",
@@ -525,7 +525,7 @@
                 {
                     "id": "3026e15a-cf89-4626-b40d-d61b0d802cd4",
                     "x": 0,
-                    "y": 0,
+                    "y": 20,
                     "width": 250,
                     "height": 120,
                     "tag": "chart",
@@ -535,7 +535,7 @@
                         "baselineMode": "percentage",
                         "title": "Total Gastado",
                         "type": "scorecard",
-                        "background": "",
+                        "background": "#f0f8ff",
                         "baseline": "Data!E2",
                         "baselineDescr": "since last period",
                         "keyValue": "Data!B2"
@@ -543,8 +543,8 @@
                 },
                 {
                     "id": "bf0b19f1-c857-463c-ab3b-501de4bac427",
-                    "x": 375,
-                    "y": 0,
+                    "x": 370,
+                    "y": 20,
                     "width": 250,
                     "height": 120,
                     "tag": "chart",
@@ -554,7 +554,7 @@
                         "baselineMode": "percentage",
                         "title": "Compras realizadas",
                         "type": "scorecard",
-                        "background": "",
+                        "background": "#f0f8ff",
                         "baseline": "Data!E3",
                         "baselineDescr": "since last period",
                         "keyValue": "Data!D3"
@@ -563,8 +563,8 @@
                 },
                 {
                     "id": "f146ff41-fce3-4f51-a21c-f0903a4e2c96",
-                    "x": 750,
-                    "y": 0,
+                    "x": 745,
+                    "y": 20,
                     "width": 250,
                     "height": 120,
                     "tag": "chart",
@@ -574,7 +574,7 @@
                         "baselineMode": "percentage",
                         "title": "Gasto promedio por Compra",
                         "type": "scorecard",
-                        "background": "",
+                        "background": "#f0f8ff",
                         "baseline": "Data!E4",
                         "baselineDescr": "since last period",
                         "keyValue": "Data!D4"
