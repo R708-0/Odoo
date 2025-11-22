@@ -122,38 +122,38 @@
                 "B21": {
                     "style": 7,
                     "format": 1,
-                    "content": "=ODOO.LIST(1,1,\"config_id\")"
+                    "content": "=SUBSTITUTE(ODOO.LIST(1,1,\"config_id\"), \" (sin utilizar)\", \"\")"
                 },
                 "B22": {
-                    "content": "=ODOO.LIST(1,2,\"config_id\")"
+                    "content": "=SUBSTITUTE(ODOO.LIST(1,2,\"config_id\"),\" (sin utilizar)\", \"\")"
                 },
                 "B23": {
                     "style": 7,
-                    "content": "=ODOO.LIST(1,3,\"config_id\")"
+                    "content": "=SUBSTITUTE(ODOO.LIST(1,3,\"config_id\"),\" (sin utilizar)\", \"\")"
                 },
                 "B24": {
-                    "content": "=ODOO.LIST(1,4,\"config_id\")"
+                    "content": "=SUBSTITUTE(ODOO.LIST(1,4,\"config_id\"),\" (sin utilizar)\", \"\")"
                 },
                 "B25": {
                     "style": 7,
-                    "content": "=ODOO.LIST(1,5,\"config_id\")"
+                    "content": "=SUBSTITUTE(ODOO.LIST(1,5,\"config_id\"),\" (sin utilizar)\", \"\")"
                 },
                 "B26": {
-                    "content": "=ODOO.LIST(1,6,\"config_id\")"
+                    "content": "=SUBSTITUTE(ODOO.LIST(1,6,\"config_id\"),\" (sin utilizar)\", \"\")"
                 },
                 "B27": {
                     "style": 7,
-                    "content": "=ODOO.LIST(1,7,\"config_id\")"
+                    "content": "=SUBSTITUTE(ODOO.LIST(1,7,\"config_id\"),\" (sin utilizar)\", \"\")"
                 },
                 "B28": {
-                    "content": "=ODOO.LIST(1,8,\"config_id\")"
+                    "content": "=SUBSTITUTE(ODOO.LIST(1,8,\"config_id\"),\" (sin utilizar)\", \"\")"
                 },
                 "B29": {
                     "style": 7,
-                    "content": "=ODOO.LIST(1,9,\"config_id\")"
+                    "content": "=SUBSTITUTE(ODOO.LIST(1,9,\"config_id\"),\" (sin utilizar)\", \"\")"
                 },
                 "B30": {
-                    "content": "=ODOO.LIST(1,10,\"config_id\")"
+                    "content": "=SUBSTITUTE(ODOO.LIST(1,10,\"config_id\"),\" (sin utilizar)\", \"\")"
                 },
                 
                 "C20": {
