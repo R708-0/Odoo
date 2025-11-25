@@ -5,12 +5,14 @@
     "version": "1.0.1",
     "depends":['base','product','stock','purchase','point_of_sale','web','spreadsheet_dashboard','spreadsheet_dashboard_account'],
     "data":[
-        # 'views/assets.xml',
+        'security/ir.model.access.csv',
+        'security/farmaclara_groups.xml',
         'views/farmaclara_ventas.xml',
         'views/farmaclara_inventario.xml',
         'views/farmaclara_compras.xml',
         'views/farmaclara_tablero.xml',
         'data/farmaclara_dashboards.xml',
+        
     ],
     "assets":{
         'web.assets_backend':[

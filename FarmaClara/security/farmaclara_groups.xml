@@ -1,0 +1,6 @@
+<odoo>
+    <record id="groups_farmaclara_user" model="res.groups">
+        <field name="name">Usuario FarmaClara</field>
+        <field name="category_id" ref="base.module_category_user_type"/>
+    </record>
+</odoo>

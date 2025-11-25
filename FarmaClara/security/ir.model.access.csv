@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_res_partner_farmaclara,access_res_partner_farmaclara,base.model_res_partner,FarmaClara.groups_farmaclara_user,1,0,0,0
+access_account_farmaclara,access_account_farmaclara,base.model_res_users,FarmaClara.groups_farmaclara_user,1,0,0,0
+
