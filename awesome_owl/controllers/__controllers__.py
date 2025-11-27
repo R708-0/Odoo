@@ -2,7 +2,7 @@
 from odoo import http
 from odoo.http import request, route
 
-# Crear una clase heredada de los controladores web
+# Crear una clase que hereda los controladores web
 class OwlPlayground(http.Controller):
 
     # Registra el metodo awesome_owl como una ruta en el servidor de odoo
