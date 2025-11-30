@@ -89,6 +89,7 @@
         <field name="res_model">purchase.order</field>
         <field name="view_mode">tree,form,pivot,graph,calendar</field>
         <field name="view_id" ref="FarmaClara.farmaclara_compras_tree_view"/>
+        <field name="groups_id" eval="[(4, ref('group_farmaclara_user'))]" />
         
     </record>
     <menuitem id="menu_farmaclara_compras" groups="FarmaClara.group_farmaclara_user,base.group_system" parent="FarmaClara.menu_farmaclara_ventas" name ="Compras" action="FarmaClara.farmaclara_compras_action_view" sequence="11"/>

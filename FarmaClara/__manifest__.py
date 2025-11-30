@@ -5,8 +5,8 @@
     "version": "1.0.1",
     "depends":['base','product','stock','purchase','point_of_sale','web','spreadsheet_dashboard','spreadsheet_dashboard_account'],
     "data":[
-        'security/ir.model.access.csv',
         'security/farmaclara_groups.xml',
+        'security/ir.model.access.csv',
         'views/farmaclara_ventas.xml',
         'views/farmaclara_inventario.xml',
         'views/farmaclara_compras.xml',
