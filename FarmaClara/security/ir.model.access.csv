@@ -2,13 +2,15 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 
 access_users_farmaclara,users.farmaclara,base.model_res_users,group_farmaclara_user,1,0,0,0
 access_partners_farmaclara,partners.farmaclara,base.model_res_partner,group_farmaclara_user,1,0,0,0
-access_partners_int,partners.int,base.model_res_partner,group_farmaclara_user,1,0,0,0
 access_lang_farmaclara,lang.farmaclara,base.model_res_lang,group_farmaclara_user,1,0,0,0
-access_menu_farmaclara,menu.farmaclara,base.model_ir_ui_menu,group_farmaclara_user,1,0,0,0
-access_menu_farmaclara,menu.farmaclara,web.model_ir_ui_menu,group_farmaclara_user,1,0,0,0
+
+
 
 
 access_pos_config_farmaclara,pos.config.farmaclara,point_of_sale.model_pos_config,group_farmaclara_user,1,1,0,0
+access_pos_session_farmaclara,pos.session.farmaclara,point_of_sale.model_pos_session,group_farmaclara_user,1,1,0,0
+access_pos_payment_farmaclara,pos.payment.farmaclara,point_of_sale.model_pos_payment_method,group_farmaclara_user,1,1,0,0
+
 access_purchase_order_farmaclara,purchase.order.farmaclara,purchase.model_purchase_order,group_farmaclara_user,1,1,0,0
 
 

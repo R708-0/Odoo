@@ -1,6 +1,22 @@
 <odoo>
+    <!-- Categoria de usuarios farmaclara -->
+    <record id="module_category_farmaclara" model="ir.module.category">
+        <field name="name">Farmaclara</field>
+        <field name="description">Gestiòn Farmaclara</field>
+        <field name="sequence">1</field>
+    </record>
+
+    <!-- heredar permisos de usuario interno a usuario farmaclara -->
     <record id="group_farmaclara_user" model="res.groups">
         <field name="name">Usuario FarmaClara</field>
-        <field name="category_id" ref="base.module_category_user_type"/>
+        <field name="category_id" ref="module_category_farmaclara"/>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+    <!--                      OCULTAR MENUS INNECESARIOS                -->
+
+    <!-- menu convesaciones  -->
+    <record id="mail.menu_root_discuss" model="ir.ui.menu">
+        <field name="groups_id" eval="[(3, ref('group_farmaclara_user'))]"/>
     </record>
 </odoo>

@@ -15,7 +15,7 @@
         <field name="name">FarmaClara</field>
         <field name="res_model">pos.config</field>
         <field name="view_mode">kanban,tree,form</field>
-        <field name="groups_id" eval="[(4, ref('group_farmaclara_user'))]"/>
+        <field name="groups_id" eval="[(4, ref('FarmaClara.group_farmaclara_user'))]"/>
     </record>
 
     <menuitem id="menu_farmaclara_ventas" parent="" name="FarmaClara" groups="FarmaClara.group_farmaclara_user,base.group_system" action="farmaclara_ventas_action_view"  sequence="1"/>
