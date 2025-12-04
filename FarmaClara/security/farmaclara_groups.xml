@@ -15,8 +15,38 @@
 
     <!--                      OCULTAR MENUS INNECESARIOS                -->
 
-    <!-- menu convesaciones  -->
+    <!-- menu ajustes  -->
+    <record id="base.menu_administration" model="ir.ui.menu">
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
+    </record> -->
+    <!-- menu conversaciones -->
     <record id="mail.menu_root_discuss" model="ir.ui.menu">
-        <field name="groups_id" eval="[(3, ref('group_farmaclara_user'))]"/>
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
     </record>
+    <!-- menu contactos -->
+    <record id="contacts.menu_contacts" model="ir.ui.menu">
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
+    </record>
+    <!-- menu actividades -->
+    <record id="project_todo.menu_todo_todos" model="ir.ui.menu">
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
+    </record>
+    <!-- menu tableros -->
+    <record id="spreadsheet_dashboard.spreadsheet_dashboard_menu_root" model="ir.ui.menu">
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
+    </record>
+    <!-- menu empleados -->
+    <record id="hr.menu_hr_root" model="ir.ui.menu">
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
+    </record>
+    <!-- menu enlaces -->
+    <record id="utm.menu_link_tracker_root" model="ir.ui.menu">
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
+    </record>
+    <!-- menu aplicaciones -->
+    <record id="base.menu_management" model="ir.ui.menu">
+        <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
+    </record>
+
+    
 </odoo>
