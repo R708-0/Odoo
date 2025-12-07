@@ -1,0 +1,23 @@
+<odoo>
+    <record id="farmaclara_session_view" model="ir.ui.view">
+        <field name="name">farmaclara.session.view</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="point_of_sale.view_pos_config_kanban"/>
+        <field name="arch" type="xml">
+            <!-- CREAR DIV CON INFO MODIFICADA -->
+            <xpath expr="//div[@class='container o_kanban_card_content']" position="inside">
+                <div>Inicie el turno para comenzar a vender</div>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="farmaclara_session_action_view" model="ir.actions.act_window">
+        <field name="name">FarmaClara</field>
+        <field name="res_model">pos.config</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="groups_id" eval="[(4, ref('FarmaClara.group_farmaclara_user'))]"/>
+    </record>
+
+    <menuitem id="menu_farmaclara_session" parent="" name="FarmaClara" groups="FarmaClara.group_farmaclara_user,base.group_system" action="farmaclara_session_action_view"  sequence="1"/>
+    
+</odoo>

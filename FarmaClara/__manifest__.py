@@ -7,6 +7,7 @@
     "data":[
         'security/farmaclara_groups.xml',
         'security/ir.model.access.csv',
+        'views/farmaclara_session.xml',
         'views/farmaclara_ventas.xml',
         'views/farmaclara_inventario.xml',
         'views/farmaclara_compras.xml',
