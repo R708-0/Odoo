@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- indica al template que respete los espacios en blando (saltos de pagina y espacios) -->
 <templates xml:space="preserve">
 
-
+    <!-- la etiqueta "t" indica una plantilla o template -->
     <t t-name="awesome_owl.Playground">
         <div class="p-3">
             aloha perrito
         </div>
     </t>
-
 
 </templates>

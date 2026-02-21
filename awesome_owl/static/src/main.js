@@ -8,7 +8,7 @@ const config = {
     name: "OWL Tutorial"
 };
 
-// Montar en componente Playground
+// Montar el componente Playground
 whenReady( () => mountComponent(Playground, document.body, config) )
 
 

@@ -1,0 +1,21 @@
+/* Cambiar color principal */
+.o_main_navbar {
+    background-color: #4628A7 !important; /* azul bootstrap */
+}
+
+/* Hacer formularios tipo card */
+.o_form_view {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+/* Botones más grandes para farmacia */
+.btn {
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+.btn-primary {
+  background-color: #28a745; /* Verde farmacia */
+  border: none;
+}

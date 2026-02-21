@@ -1,0 +1,12 @@
+<template id="product_card_view" inherit_id="product.template" customize_show="True">
+    <xpath expr="//div[@class='o_form_sheet']" position="replace">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 card shadow-sm p-3 mb-5 bg-white rounded">
+                    <h4 class="card-title"><t t-esc="record.name"/></h4>
+                    <p class="card-text">Precio: <t t-esc="record.list_price"/></p>
+                </div>
+            </div>
+        </div>
+    </xpath>
+</template>

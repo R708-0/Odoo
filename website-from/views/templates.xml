@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record id="add_partners" model="website.page">
+        <field name="name">Become a Partner</field>
+        <field name="is_published" eval="True"/>
+        <field name="key">website_form.add_partner</field>
+        <field name="url">/Become-Partner</field>
+        <field name="website_id" eval="1"/>
+        <field name="type">qweb</field>
+        <field name="arch" type="xml">
+            <t t-name="website_from.add_partner">
+                <t t-call="website.layout">
+                    <div id="wrap" class="oe_structure"/>
+
+                    <div class="container">
+                        <div class='row'>
+                            <div class='col-lg-6'>
+                                <form action="/add-partner/" method="post" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <label for="input_email">Correo electronico</label>
+                                        <input type="email" class="form-control" id="input_email" aria-describedby="emailHelp" placeholder="Ingrese su correo"/>
+                                        <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo con terceros</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input_password">Contraseña</label>
+                                        <input typr="password" class="form-control" id="input_password" placeholder="Escribe tu contraseña"/>
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="check1"/>
+                                        <label for="check1" class="form-check-label">Acepto vendar mi alma al diablo</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>
