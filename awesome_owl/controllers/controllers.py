@@ -10,4 +10,4 @@ class OwlPlayground(http.Controller):
     def show_playground(self):
 
         # Renderiza el template playground
-        return request.render('awesome_owl.palyground')
+        return request.render('awesome_owl.playground')

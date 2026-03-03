@@ -19,3 +19,9 @@
   background-color: #28a745; /* Verde farmacia */
   border: none;
 }
+
+.farmacia-form {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}

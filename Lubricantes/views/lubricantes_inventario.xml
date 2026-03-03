@@ -52,26 +52,40 @@
         <field name="inherit_id" ref="point_of_sale.product_template_only_form_view"/>
         <field name="priority">99</field>
         <field name="arch" type="xml">
+        
+            <!-- partes del documento -->
+            <xpath expr="//div[@class='oe_chatter']" position="replace"/>
+            <xpath expr="//header" position="replace"/>
+            <!-- botones superiores -->
+            <xpath expr="//button[@name='action_open_documents']" position="replace"/>
+            <xpath expr="//button[@name='action_view_orderpoints']" position="replace"/>
+            <xpath expr="//button[@name='action_product_tmpl_forecast_report']" position="replace"/>
+
             <xpath expr="//sheet" position="replace">
-                <sheet >
+                <sheet  class="farmacia-form">
+                    
                     <div class="row">
                         <div class="col-6">
                             <group>
                                 <field name="name"/>
                                 <field name="default_code"/>
                                 <field name="list_price"/>
+                                <field name="type" invisible="1"/>
                             </group>
                         </div>
 
                         <div class="col-6">
                             <group>
-                                <field name="x_fecha_vencimiento"/>
-                                <field name="qty_available"/>
+                                <field name="available_in_pos"/>
+                                <!-- <field name="fecha_vencimiento"/> -->
+                                <field name="presentacion"/>
+                                <field name='detailed_type' invisible='1'/>
                             </group>
                         </div>
                     </div>
                 </sheet>
             </xpath>
+        </field>
     </record>
 
 
