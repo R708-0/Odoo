@@ -6,7 +6,7 @@
     <!-- la etiqueta "t" indica una plantilla o template -->
     <t t-name="awesome_owl.Playground">
         <div class="p-3">
-            aloha perrito
+            Aloha perrito
         </div>
     </t>
 
