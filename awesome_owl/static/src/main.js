@@ -11,8 +11,3 @@ const config = {
 
 // Montar el componente Playground
 whenReady( () => mountComponent(Playground, document.body, config) )
-
-
-
-
-

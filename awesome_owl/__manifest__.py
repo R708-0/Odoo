@@ -23,5 +23,8 @@
             'web/static/src/libs/fontawesome/css/font-awesome.css',
             'awesome_owl/static/src/**/*',
         ],
+        'web.assets_backend': [
+            'awesome_owl/static/src/style.css'
+        ],
     },
 }

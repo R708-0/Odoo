@@ -1,12 +1,9 @@
-<template id="product_card_view" inherit_id="product.template" customize_show="True">
-    <xpath expr="//div[@class='o_form_sheet']" position="replace">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 card shadow-sm p-3 mb-5 bg-white rounded">
-                    <h4 class="card-title"><t t-esc="record.name"/></h4>
-                    <p class="card-text">Precio: <t t-esc="record.list_price"/></p>
-                </div>
+<odoo>
+    <template id="lubricantes_buttons_template" inherit_id="web.FormView.Buttons">
+        <xpath expr="//div[@class='o_form_buttons_edit']" position="replace">
+            <div>
+                <button type="button" class="btn btn-primary">btono</button>
             </div>
-        </div>
-    </xpath>
-</template>
+        </xpath>
+    </template>
+</odoo>

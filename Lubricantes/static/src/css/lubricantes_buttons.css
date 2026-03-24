@@ -1,0 +1,6 @@
+/* cambiar botones CRUD */
+
+.o_control_panel .o_control_panel_breadcrumbs{
+    display: flex !important;
+    gap: 10px !important;
+}

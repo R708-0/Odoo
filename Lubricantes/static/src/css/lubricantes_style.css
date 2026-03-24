@@ -15,7 +15,7 @@
     border-radius: 10px;
     font-size: 1.1rem;
 }
-.btn-primary {
+.btn-primary, .btn-outline-primary {
   background-color: #28a745; /* Verde farmacia */
   border: none;
 }
@@ -25,3 +25,10 @@
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0,0,0,0.05);
 }
+
+/* Boton guardar */
+.o_form_button_save {
+    background-color: #198754 !important;
+    color: white !important;
+}
+
