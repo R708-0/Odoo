@@ -16,7 +16,7 @@
 
         'web.assets_frontend':[
             'Lubricantes/static/src/css/lubricantes_style.css',
-            'Lubricantes/static/src/xml/lubricantes_templates.xml',
+            
             'Lubricantes/static/src/css/lubricantes_buttons.css',
         ],
 

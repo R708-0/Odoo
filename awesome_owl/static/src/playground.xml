@@ -13,4 +13,13 @@
         </div>
     </t>
 
+    <t t-name="awesome_owl.Counter">
+        <div class="Container p-3 border">
+            <p>
+                Counter: <t t-esc="state.value"/>
+            </p>
+            <button type="button" class="btn btn-outline-primary" t-on-click="increment">Increment2</button>
+        </div>
+    </t>
+
 </templates>
