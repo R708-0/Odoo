@@ -11,5 +11,5 @@ const config = {
 };
 
 // Montar el componente Playground
-whenReady( () => mountComponent(Playground, document.body, config) )
-whenReady( () => mountComponent(Counter, document.body, config) )
+whenReady( () => mountComponent(Playground, document.body, config) );
+whenReady( () => mountComponent(Counter, document.body, config) );

@@ -1,14 +1,15 @@
 /** @odoo-module **/
-import {Component, useState} from "@odoo/owl";
+import {Component, UseState} from "@odoo/owl";
 
-export class Counter extends Component {
-    static template = "awesome_owl.Counter";
+export class Counter extends Component{
+    static template = "awesome_owl.counter";
     static props = {};
 
-    setup (){
-        this.state = useState( {value:0} );
+    setup(){
+        this.state = UseState ({ value: 0});
     }
-    increment (){
-        this.state.value++
+
+    increment(){
+        this.state.value++;
     }
 }

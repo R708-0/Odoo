@@ -10,10 +10,14 @@
     padding: 16px;
 }
 
-/* Botones más grandes para farmacia */
+/* Botones principales */
 .btn {
-    border-radius: 10px;
-    font-size: 1.1rem;
+    border-radius: 8px !important;
+    padding: 8px 20px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    border: none !important;
+
 }
 .btn-primary, .btn-outline-primary {
   background-color: #09d1ec; /* Verde farmacia */

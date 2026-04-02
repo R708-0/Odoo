@@ -1,32 +1,124 @@
-/* cambiar botones CRUD */
-.o_control_panel .o_control_panel_breadcrumbs{
-    display: flex !important;
-    gap: 10px !important;
+/* ====================================
+         BOTONES DEL CONTROL PANEL 
+   ==================================== */
+
+/* Contenedor principal de botones */
+.o_control_panel .o_control_panel_breadcrumbs {
+    gap: 8px !important; /* Espacio entre botones */
 }
 
-/* estilo general de botones */
-
-.o_form_button_create,
-.o_form_button_save,
-.o_form_button_cancel {
-    border-radius: 12px !important;
-    padding: 8px 16px !important;
-    font-weight: 600;
+/* Estilo base para todos los botones del formulario */
+.o_form_view .o_form_button_create,
+.o_form_view .o_form_button_edit,
+.o_form_view .o_form_button_save,
+.o_form_view .o_form_button_cancel {
+    border-radius: 8px !important;
+    padding: 8px 20px !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    transition: all 0.3s ease !important;
+    border: none !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
 }
 
-/* botones individuales */
-
-.o_form_button_create {
-    background-color:#0d6efd !important;
+/* Botón NUEVO / CREAR */
+.o_form_view .o_form_button_create {
+    background: linear-gradient(135deg, #09d1ec 0%, #0d6efd 100%) !important;
     color: white !important;
 }
 
-.o_form_button_save {
-    background-color:#198754 !important;
+.o_form_view .o_form_button_create:hover {
+    background: linear-gradient(135deg, #09caec 0%, #0d79fd 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,168,150,0.3) !important;
+}
+
+.o_form_view .o_form_button_create:active {
+    transform: translateY(0);
+}
+
+/* Botón EDITAR */
+.o_form_view .o_form_button_edit {
+    background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%) !important;
     color: white !important;
 }
 
-.o_form_button_cancel {
-    background-color: #dc3545 !important;
+.o_form_view .o_form_button_edit:hover {
+    background: linear-gradient(135deg, #3a0ca3 0%, #2d0a7a 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(67,97,238,0.3) !important;
+}
+
+/* Botón GUARDAR */
+.o_form_view .o_form_button_save {
+    
+    background: linear-gradient(135deg, #06d6a0 0%, #04a777 100%) !important;
     color: white !important;
+}
+.o_form_view .o_form_button_save::after {
+    content: 'Guardar';
+    font-size: 14px;
+    font-weight: 500;
+}
+.o_form_view .o_form_button_save:hover {
+    background: linear-gradient(135deg, #04a777 0%, #037d59 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(6,214,160,0.3) !important;
+}
+
+/* Botón DESCARTAR / DESCARTAR */
+.o_form_view .o_form_button_cancel {
+    background: #ffffff !important;
+    color: #6c757d !important;
+    border: 2px solid #dee2e6 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+}
+
+.o_form_view .o_form_button_cancel:hover {
+    background: #f8f9fa !important;
+    color: #495057 !important;
+    border-color: #adb5bd !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+}
+
+.o_form_view .o_form_button_cancel::after {
+    content: 'Descartar';
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Iconos dentro de los botones */
+.o_form_view .o_cp_buttons button i {
+    margin-right: 6px;
+}
+
+/* Agrupar botones con bordes redondeados conectados */
+.o_control_panel .o_cp_buttons .btn-group {
+    gap: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.o_control_panel .o_cp_buttons .btn-group button:first-child {
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+}
+
+.o_control_panel .o_cp_buttons .btn-group button:last-child {
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
+
+.o_control_panel .o_cp_buttons .btn-group button:not(:first-child) {
+    border-left: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+/* Responsive - Botones más pequeños en móvil */
+@media (max-width: 768px) {
+    .o_form_view .o_cp_buttons button {
+        padding: 6px 12px !important;
+        font-size: 12px !important;
+    }
 }
