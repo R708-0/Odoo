@@ -1,6 +1,6 @@
 {
-    "name": "Awesome Owl",
-    "description": "modulo owl",
+    "name": "Awesome Owl Base",
+    "description": "modulo de prueba owl",
     "author":"Diego Melgar Parada",
 
     "depends": ['base','web'],
@@ -12,7 +12,7 @@
     ],
 
     "assets": {
-        'awesome_owl.assets_playground': [
+        'awesome_owl_base.assets_playground': [
             ('include', 'web._assets_helpers'),
             ('include', 'web._assets_backend_helpers'),
             'web/static/src/scss/pre_variables.scss',
@@ -21,10 +21,10 @@
             ('include', 'web._assets_bootstrap'),
             ('include', 'web._assets_core'),
             'web/static/src/libs/fontawesome/css/font-awesome.css',
-            'awesome_owl/static/src/**/*',
+            'awesome_owl_base/static/src/**/*',
         ],
         'web.assets_backend': [
-            'awesome_owl/static/src/style.css'
+            'awesome_owl_base/static/src/style.css'
         ],
     },
 }

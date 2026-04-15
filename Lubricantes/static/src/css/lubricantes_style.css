@@ -1,6 +1,6 @@
 /* Cambiar color principal */
 .o_main_navbar {
-    background-color: #0d6efd !important; /* azul bootstrap */
+    background-color: #0d6efd !important; 
 }
 
 /* Hacer formularios tipo card */
@@ -17,11 +17,22 @@
     font-size: 14px !important;
     font-weight: 600 !important;
     border: none !important;
+    transition: all 0.3s ease !important;
+   
 
 }
 .btn-primary, .btn-outline-primary {
-  background-color: #09d1ec; /* Verde farmacia */
+  background: linear-gradient(135deg, #09d1ec 0%, #0d6efd 100%) !important; 
+  color: white !important;
   border: none;
+
+}
+.btn-primary:hover, .btn-outline-primary:hover {
+  
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 168, 150, 0.3) !important;
+  border: none;
+
 }
 
 .farmacia-form {

@@ -6,13 +6,9 @@
     <!-- la etiqueta "t" indica una plantilla o template -->
     <t t-name="awesome_owl.Playground">
         <div class="container p-3 border">
-            <p>
-                Counter: <t t-esc="state.value"/>
-            </p>
-            <button type="button" class="btn btn-primary" t-on-click="increment">Increment</button>
+            hello
+            <Counter />
+            <Counter />
         </div>
     </t>
-
-   
-
 </templates>
