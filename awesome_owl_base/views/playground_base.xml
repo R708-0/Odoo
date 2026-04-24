@@ -1,0 +1,7 @@
+<?xml versiopn="1.0" encoding="UTF-8" ?>
+
+indica al template que respete los espacios en blanco (espacios y saltos de pagina)
+<templates xml:space="preserve">
+    <t>
+    </t>
+</templates>
