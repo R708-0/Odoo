@@ -20,24 +20,56 @@
     border: none !important;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
 }
- /* Boton atras / breadcrumbs */
-.o_form_view .o_control_panel .o_last_breadcrumb_item, .o_control_panel_breadcrumbs_actions{
+ /******************************** BOTON ATRAS / BREADCRUMBS ***********************************/
+
+ .o_form_view .o_control_panel .o_last_breadcrumb_item, .o_control_panel_breadcrumbs_actions{
     display: none !important;
 }
 
-.o_form_view .o_control_panel .breadcrumb-item a {
-    background :#6c757d !important;
-    color: white !important;
-    padding: 8px 20px !important;
+
+/* ajustar el contenedor */
+.o_form_view .o_control_panel .o_breadcrumb a{
+    display: flex !important;
+    align-items: center !important;
     border-radius: 8px !important;
-    text-decoration: none !important;
+    border: 2px solid #dee2e6 !important;
     font-weight: 500 !important;
     transition: all 0.3s ease !important;
-    display: inline-flex !important;
+    text-decoration: none !important;
+    padding: 8px 20px !important;
+    border: 2px solid #dee2e6 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+
+}
+.o_form_view .o_control_panel .o_breadcrumb a:hover {
+    background: #f8f9fa !important;
+    color: #495057 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+    border-color: #adb5bd !important; 
+}
+
+/* agregar el icono de la flechita */
+.o_form_view .o_control_panel .breadcrumb-item a::before {
+    content: '\f060'; /* icono de la flechita */
+    font-family: 'FontAwesome';
+    font-size: 14px;
+    margin-right: 4px !important;
+}
+
+/* cambiar el texto por "atras" */
+.o_form_view .o_control_panel .breadcrumb-item a {
+    font-size: 0px !important;
+}
+.o_form_view .o_control_panel .breadcrumb-item a::after {
+    content: 'Atras';
+    font-size: 14px !important;
+    font-weight: 500 !important;
     
 }
 
-/* Botón NUEVO / CREAR */
+
+/********************************** BOTON NUEVO / CREAR ******************************************/
 .o_form_view .o_form_button_create {
     background: linear-gradient(135deg, #09b3ec 0%, #0d6efd 100%) !important;
     color: white !important;
@@ -65,7 +97,7 @@
     box-shadow: 0 4px 12px rgba(67,97,238,0.3) !important;
 }
 
-/* Botón GUARDAR */
+/************************************ BOTON GUARDAR ***********************************************/
 .o_form_view .o_form_button_save {
     
     background: linear-gradient(135deg, #06d6a0 0%, #04a777 100%) !important;
@@ -82,28 +114,16 @@
     box-shadow: 0 4px 12px rgba(6,214,160,0.3) !important;
 }
 
-/* Botón DESCARTAR / DESCARTAR */
+/****************************************** BOTON DESCARTAR **********************************************/
 .o_form_view .o_form_button_cancel {
-    background: #ffffff !important;
-    color: #6c757d !important;
-    border: 2px solid #dee2e6 !important;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+    display: none !important;
+    
 }
 
-.o_form_view .o_form_button_cancel:hover {
-    background: #f8f9fa !important;
-    color: #495057 !important;
-    border-color: #adb5bd !important;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
-}
 
-.o_form_view .o_form_button_cancel::after {
-    content: 'Descartar';
-    font-size: 14px;
-    font-weight: 500;
-}
 
+
+/****************************************** GRUPO DE BOTONES ***************************************************/
 /* Iconos dentro de los botones */
 .o_form_view .o_cp_buttons button i {
     margin-right: 6px;
@@ -131,7 +151,26 @@
     border-left: 1px solid rgba(255,255,255,0.2) !important;
 }
 
+/****************************** REORDENAR BOTONES ***************************/
+.o_form_view .o_control_panel .o_control_panel_breadcrumbs {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start;
+    gap: 12px !important;
+}
 
+.o_form_view .o_control_panel .o_control_panel_breadcrumbs .o_breadcrumb,
+.o_form_view .o_control_panel .o_control_panel_breadcrumbs .breadcrumb {
+    order : 1 !important;
+}
+
+.o_form_view .o_control_panel .o_control_panel_breadcrumbs .o_control_panel_main_buttons{
+    order : 2 !important;
+}
+.o_form_view .o_control_panel .o_control_panel_breadcrumbs .o_form_status_indicator{
+    order : 3 !important;
+}
 
 /* Responsive - Botones más pequeños en móvil */
 @media (max-width: 768px) {

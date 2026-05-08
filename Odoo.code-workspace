@@ -1,10 +1,10 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"path": "../../../../../../Program Files/Odoo 17.0.20250715/server"
 		},
 		{
-			"path": "../../odoo17/server"
+			"path": "."
 		}
 	],
 	"settings": {}
