@@ -3,9 +3,6 @@
    ==================================== */
 
 /* Contenedor principal de botones */
-.o_control_panel .o_control_panel_breadcrumbs {
-    gap: 8px !important; /* Espacio entre botones */
-}
 
 /* Estilo base para todos los botones del formulario */
 .o_form_view .o_form_button_create,
@@ -30,7 +27,7 @@
 /* ajustar el contenedor */
 .o_form_view .o_control_panel .o_breadcrumb a{
     display: flex !important;
-    align-items: center !important;
+    align-items: flex-start !important;
     border-radius: 8px !important;
     border: 2px solid #dee2e6 !important;
     font-weight: 500 !important;
@@ -121,8 +118,6 @@
 }
 
 
-
-
 /****************************************** GRUPO DE BOTONES ***************************************************/
 /* Iconos dentro de los botones */
 .o_form_view .o_cp_buttons button i {
@@ -151,11 +146,12 @@
     border-left: 1px solid rgba(255,255,255,0.2) !important;
 }
 
+
 /****************************** REORDENAR BOTONES ***************************/
 .o_form_view .o_control_panel .o_control_panel_breadcrumbs {
     display: flex !important;
     flex-direction: row !important;
-    align-items: center !important;
+    align-items: flex-start !important;
     justify-content: flex-start;
     gap: 12px !important;
 }
@@ -163,6 +159,7 @@
 .o_form_view .o_control_panel .o_control_panel_breadcrumbs .o_breadcrumb,
 .o_form_view .o_control_panel .o_control_panel_breadcrumbs .breadcrumb {
     order : 1 !important;
+
 }
 
 .o_form_view .o_control_panel .o_control_panel_breadcrumbs .o_control_panel_main_buttons{
@@ -170,6 +167,9 @@
 }
 .o_form_view .o_control_panel .o_control_panel_breadcrumbs .o_form_status_indicator{
     order : 3 !important;
+}
+.o_control_panel .o_control_panel_breadcrumbs, .o_control_panel .o_control_panel_navigation{
+    flex: none !important;
 }
 
 /* Responsive - Botones más pequeños en móvil */
