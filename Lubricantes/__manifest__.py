@@ -4,6 +4,8 @@
     'author': 'Diego Melgar Parada',
     'depends':['base','product','stock','purchase','point_of_sale','web',],
     'data':[
+        'security/lubricantes_groups.xml',
+        'security/ir.model.access.csv',
         'views/lubricantes_inventario.xml',
     ],
 

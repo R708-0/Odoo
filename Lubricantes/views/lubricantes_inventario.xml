@@ -46,14 +46,13 @@
     </record>
 
     <!-- heredar vista form  -->
-    <record id="lubricantes_inventario_only_form_view" model="ir.ui.view">
-        <field name="name">lubricantes.iventario.only.form.view</field>
+    <record id="lubricantes_inventario_form_view" model="ir.ui.view">
+        <field name="name">lubricantes.inventario.form.view</field>
         <field name="model">product.template</field>
         <field name="inherit_id" ref="point_of_sale.product_template_only_form_view"/>
         <field name="priority">99</field>
         <field name="arch" type="xml">
-        
-            <!-- partes del documento -->
+             <!-- partes del documento -->
             <xpath expr="//div[@class='oe_chatter']" position="replace"/>
             <xpath expr="//header" position="replace"/>
             <!-- botones superiores -->
@@ -90,7 +89,7 @@
 
 
     <!-- modificar vista del pos -->
-    <record id ="lubricantes_inventario_form_view" model="ir.ui.view">
+    <record id ="lubricantes_inventario_pos_form_view" model="ir.ui.view">
         <field name="name">lubricantes.inventario.form.view</field>
         <field name="model">product.template</field>
         <field name="inherit_id" ref="stock.product_template_form_view_procurement_button"/>
@@ -102,10 +101,10 @@
   
     <!-- crear evento de las vistas -->
     <record id="lubricantes_inventario_action_view" model="ir.actions.act_window">
-        <field name="name">Lubricantes Carlitos</field>
+        <field name="name">Lubricantes Carlitos </field>
         <field name="res_model">product.template</field>
         <field name="view_mode">tree,form,kanban</field>
     </record>
     <!-- crear menu  -->
-    <menuitem id="menu_lubricantes_inventario"  parent="" action="Lubricantes.lubricantes_inventario_action_view" sequence="1"/>
+    <menuitem id="menu_lubricantes_inventario"   parent="" action="Lubricantes.lubricantes_inventario_action_view" sequence="1"/>
 </odoo>

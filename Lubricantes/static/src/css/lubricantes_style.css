@@ -1,6 +1,9 @@
-/* Cambiar color principal */
-.o_main_navbar , .o_menu_sections{
-    background: linear-gradient(135deg, #09b3ec 0%, #0d6efd 100%) !important; 
+/* Cambiar color principal  FF6192*/
+.o_navbar, .o_main_navbar , .o_menu_sections .o_nav_entry{
+    background: #1b74fa !important; 
+}
+.o_main_navbar .o_menu_sections .o_nav_entry:hover {
+    background: #09b3ec !important;   
 }
 
 /* Hacer formularios tipo card */
@@ -10,7 +13,7 @@
     padding: 16px;
 }
 
-/* Botones principales */
+/* Botones principales */ 
 .btn {
     border-radius: 8px !important;
     padding: 8px 20px !important;
